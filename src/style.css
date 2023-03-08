@@ -11,21 +11,21 @@ button {
   background-color: transparent;
 }
 
-.footer {
+footer {
   color: #cf1516;
   text-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.8);
   font-weight: bolder;
   padding: 0 auto;
 }
 
-.footer a {
+footer a {
   text-decoration: none;
   color: #cf1516;
 }
 
 .container {
   position: relative;
-  top: 230px;
+  top: 80px;
   margin: auto;
   width: max-content;
   padding: 5px;
@@ -36,7 +36,7 @@ button {
 }
 
 #vecna {
-  max-width: 100px;
+  max-width: 200px;
   transition: 250ms ease-in-out;
   position: relative;
   right: -140px;
@@ -47,15 +47,15 @@ button {
 
 #vecna:hover {
   max-width: 150px;
-  transform: scale(13);
+  transform: scale(8);
 }
 
 #eddie {
-  max-width: 100px;
+  max-width: 150px;
   transition: 250ms ease-in-out;
   position: relative;
   right: -950px;
-  top: -80px;
+  top: -135px;
 }
 
 #eddie:hover {
