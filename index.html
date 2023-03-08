@@ -23,37 +23,53 @@
       alt="World Clock"
     />
 
-    <audio
-      class="vecnaSong"
-      id="vecnaSong"
-      src="audio/clock.mp3"
-      preload="auto"
-      volume="0.2"
-    ></audio>
-    <button
-      class="vecna-button"
-      id="vecna-button"
-      onclick="document.getElementById(
-        'vecnaSong').play()"
-    >
-      <img class="img-fluid" id="vecna" src="src/vecna.png" alt="Vecna" />
-    </button>
+    <div class="button-container">
+      <audio
+        class="vecnaSong"
+        id="vecnaSong"
+        src="audio/clock.mp3"
+        preload="auto"
+        volume="0.2"
+      ></audio>
+      <button
+        class="vecna-button"
+        id="vecna-button"
+        onclick="javascript:toggleVecnaSong()"
+      >
+        <img class="img-fluid" id="vecna" src="src/vecna.png" alt="Vecna" />
+      </button>
+      <script type="text/javascript">
+        function toggleVecnaSong() {
+          let vs = document.getElementById("vecnaSong");
+          if (vs.paused) vs.play();
+          else vs.pause();
+        }
+      </script>
+    </div>
 
-    <audio
-      class="eddieSong"
-      id="eddieSong"
-      src="audio/metallica.mp3"
-      preload="auto"
-      volume="0.2"
-    ></audio>
-    <button
-      class="eddie-button"
-      id="eddie-button"
-      onclick="document.getElementById(
-        'eddieSong').play()"
-    >
-      <img class="img-fluid" id="eddie" src="src/eddie.png" alt="Eddie" />
-    </button>
+    <div class="button-container">
+      <audio
+        class="eddieSong"
+        id="eddieSong"
+        src="audio/metallica.mp3"
+        preload="auto"
+        volume="0.2"
+      ></audio>
+      <button
+        class="eddie-button"
+        id="eddie-button"
+        onclick="javascript:toggleEddieSong()"
+      >
+        <img class="img-fluid" id="eddie" src="src/eddie.png" alt="Eddie" />
+      </button>
+      <script type="text/javascript">
+        function toggleEddieSong() {
+          let es = document.getElementById("eddieSong");
+          if (es.paused) es.play();
+          else es.pause();
+        }
+      </script>
+    </div>
 
     <div class="container">
       <span class="footer">

@@ -39,14 +39,14 @@ button {
   max-width: 100px;
   transition: 250ms ease-in-out;
   position: relative;
-  right: -120px;
+  right: -140px;
   top: -30px;
   padding: 5px;
   display: inline;
 }
 
 #vecna:hover {
-  max-width: 100px;
+  max-width: 150px;
   transform: scale(13);
 }
 
@@ -54,7 +54,8 @@ button {
   max-width: 100px;
   transition: 250ms ease-in-out;
   position: relative;
-  right: -900px;
+  right: -950px;
+  top: -80px;
 }
 
 #eddie:hover {
