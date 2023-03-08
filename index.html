@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>World Clock 🌎</title>
+    <link rel="stylesheet" href="src/style.css" />
+    <link rel="text/javascript" href="javascript/index.js" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"
+    />
+  </head>
+  <body>
+    <img
+      class="img-fluid worldClock"
+      src="src/worldClock.png"
+      alt="World Clock"
+    />
+
+    <audio
+      class="vecnaSong"
+      id="vecnaSong"
+      src="audio/clock.mp3"
+      preload="auto"
+      volume="0.2"
+    ></audio>
+    <button
+      class="vecna-button"
+      id="vecna-button"
+      onclick="document.getElementById(
+        'vecnaSong').play()"
+    >
+      <img class="img-fluid" id="vecna" src="src/vecna.png" alt="Vecna" />
+    </button>
+
+    <audio
+      class="eddieSong"
+      id="eddieSong"
+      src="audio/metallica.mp3"
+      preload="auto"
+      volume="0.2"
+    ></audio>
+    <button
+      class="eddie-button"
+      id="eddie-button"
+      onclick="document.getElementById(
+        'eddieSong').play()"
+    >
+      <img class="img-fluid" id="eddie" src="src/eddie.png" alt="Eddie" />
+    </button>
+
+    <div class="container">
+      <span class="footer">
+        <footer>
+          This project was coded by Eileen Finn and is open-sourced on
+          <a href="#" target="_blank">GitHub</a>
+        </footer>
+      </span>
+    </div>
+  </body>
+</html>
