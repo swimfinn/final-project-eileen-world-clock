@@ -13,44 +13,39 @@ button {
 
 footer {
   color: #cf1516;
-  text-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.8);
   font-weight: bolder;
-  padding: 0 auto;
   text-align: center;
   position: relative;
-  top: -30px;
+  top: -360px;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 footer a {
   text-decoration: none;
   color: #cf1516;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 select {
-  position: relative;
+  display: block;
+  width: 100%;
   padding: 20px 25px;
-  top: -60px;
-  right: -550px;
+  margin: 15px auto;
   font-weight: bolder;
-  font-size: 50px;
+  font-size: 18px;
   color: #cf1516;
+  box-shadow: 3px 3px 3px 3px #cf1516;
   background-color: transparent;
   border-color: #cf1516;
   border-width: 3px;
   border-radius: 3px;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  -ms-appearance: none;
-  appearance: none;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
-#dropDown Div {
-  color: #cf1516;
-  font-size: 50px;
-}
-
-#losAngeles {
-  color: #cf1516 !important;
+h2 {
+  margin: 0px auto;
+  font-size: 20px;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 #subline {
@@ -65,10 +60,54 @@ select {
   max-width: 100px;
 }
 
+.container {
+  position: relative;
+  top: -80px;
+  max-width: 600px !important;
+  margin: 0px auto !important;
+  padding: 30px !important;
+  border: 3px solid #cf1516;
+  background: transparent;
+  box-shadow: 7px 7px 7px 7px #cf1516;
+  border-radius: 3px;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.data {
+  padding-top: 15px;
+}
+
 .city,
 .date,
 .time {
   color: #cf1516;
+}
+
+.city {
+  display: flex;
+  margin: 0px auto;
+  justify-content: space-between;
+  padding: 0px 0;
+  border-bottom: 1px dashed #cf1516;
+}
+
+.city:last-child {
+  border: none;
+}
+
+.date {
+  opacity: 0.8;
+}
+
+.time {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.time small {
+  font-size: 24px;
+  vertical-align: middle;
+  line-height: 48px;
 }
 
 #vecna {
@@ -76,7 +115,7 @@ select {
   transition: 250ms ease-in-out;
   position: relative;
   right: -140px;
-  top: -330px;
+  top: -360px;
   padding: 5px;
   display: inline;
 }
@@ -94,8 +133,8 @@ select {
   max-width: 100px;
   transition: 250ms ease-in-out;
   position: relative;
-  right: -1000px;
-  top: -485px;
+  right: -1050px;
+  top: -500px;
 }
 
 #eddie:hover {

@@ -15,39 +15,49 @@
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"
     />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.37/moment-timezone-with-data-1970-2030.min.js"></script>
   </head>
   <body>
-      <img
-        class="img-fluid worldClock"
-        src="src/worldClock.png"
-        alt="World Clock"
-      />
-      <div id="dropDown" class="dropdown-menu p-4 text-muted" style="color:#cf1516"></div>
-      <select>
-        <option value="">Select a city...</option>
-        <option value="losAngeles">Los Angeles 🎬</option>
-        <option value="london">London 🇬🇧</option>
-        <option value="tokyo">Tokyo 🇯🇵</option>
-      </select>
+    <img
+      class="img-fluid worldClock"
+      src="src/worldClock.png"
+      alt="World Clock"
+    />
+    <div id="dropDown" class="wrapper">
+      <div class="container">
+        <select>
+          <option value="">Select a city...</option>
+          <option value="losAngeles">Los Angeles 🎬</option>
+          <option value="london">London 🇬🇧</option>
+          <option value="tokyo">Tokyo 🇯🇵</option>
+        </select>
+        <div class="data">
+          <div class="city">
+            <div>
+              <h2>Los Angeles</h2>
+              <div class="date">March 9th, 2023</div>
+            </div>
+            <div class="time">10:00 <small>a.m.</small></div>
+          </div>
+
+          <div class="city">
+            <div>
+              <h2>London</h2>
+              <div class="date">March 9th, 2023</div>
+            </div>
+            <div class="time">10:00 <small>a.m.</small></div>
+          </div>
+
+          <div class="city">
+            <div>
+              <h2>Tokyo</h2>
+              <div class="date">March 9th, 2023</div>
+            </div>
+            <div class="time">10:00 <small>a.m.</small></div>
+          </div>
+        </div>
+      </div>
     </div>
-
-<div class="city">
-    <h2>Los Angeles</h2>
-<div class="date">March 9th, 2023</div>
-<div class="time">10:00 a.m.</div>
-
-<div class="city">
-    <h2>London</h2>
-<div class="date">March 9th, 2023</div>
-<div class="time">10:00 a.m.</div>
-
-<div class="city">
-    <h2>Tokyo</h2>
-<div class="date">March 9th, 2023</div>
-<div class="time">10:00 a.m.</div>
-
-
-</div>
 
     <div class="button-container">
       <audio
@@ -97,24 +107,13 @@
       </script>
     </div>
 
-        <footer>
-          This project was coded by Eileen Finn and is open-sourced on
-          <a
-            href="https://github.com/swimfinn/final-project-eileen-world-clock.git"
-            target="_blank"
-            >GitHub</a
-          >
-        </footer>
-        <script>
-            function setColor() {
-      const color = document.querySelector("#losAngeles");
-  
-
-      color.classList.toggle("losAngeles");
-    }
-
-    let losAngeles = document.querySelector("#losAngeles");
-    darkButton.addEventListener("click", setColor);
-        </script>
+    <footer>
+      This project was coded by Eileen Finn and is open-sourced on
+      <a
+        href="https://github.com/swimfinn/final-project-eileen-world-clock.git"
+        target="_blank"
+        >GitHub</a
+      >
+    </footer>
   </body>
 </html>
