@@ -7,7 +7,7 @@ function updateTime() {
         let losAngelesTime = moment().tz("Europe/London");
 
         losAngelesDateElement.innerHTML = losAngelesTime.format("MMMM Do, YYYY");
-        losAngelesTimeElement.innerHTML = losAngelesTime.format("h:mm [<small>]a[</small>]");
+        losAngelesTimeElement.innerHTML = losAngelesTime.format("h:mm:ss [<small>]a[</small>]");
     }
 
     // London
@@ -18,7 +18,7 @@ function updateTime() {
         let londonTime = moment().tz("Europe/London");
 
         londonDateElement.innerHTML = londonTime.format("MMMM Do, YYYY");
-        londonTimeElement.innerHTML = londonTime.format("h:mm [<small>]a[</small>]");
+        londonTimeElement.innerHTML = londonTime.format("h:mm:ss [<small>]a[</small>]");
     }
 
     // Tokyo
@@ -29,24 +29,28 @@ function updateTime() {
         let tokyoTime = moment().tz("Asia/Tokyo");
 
         tokyoDateElement.innerHTML = tokyoTime.format("MMMM Do, YYYY");
-        tokyoTimeElement.innerHTML = tokyoTime.format("h:mm [<small>]a[</small>]");
+        tokyoTimeElement.innerHTML = tokyoTime.format("h:mm:ss [<small>]a[</small>]");
     }
 }
 
 function updateCity(event) {
     let cityTimeZone = event.target.value;
     if (cityTimeZone === "current") {
-        let cityName = cityTimeZone.replace("_", " ").split("/")[1];
-        let cityTime = moment().tz(cityTimeZone);
-        citiesElement = document.querySelector("#cities");
-        citiesElement.innerHTML = `<div class=""city>
+        cityTimeZone = moment.tz.guess();
+    }
+    let cityName = cityTimeZone.replace("_", " ").split("/")[1];
+    let cityTime = moment().tz(cityTimeZone);
+    citiesElement = document.querySelector("#cities");
+    citiesElement.innerHTML = `<div class=city">
         </div>
         <h2>${cityName}</h2>
-        <div class="date">${cityTime.format("h:mm")} <small>${cityTime.format("a")}</small >
+        <div class="date">${cityTime.format("MMMM Do, YYYY")}</div>
+    </div>
+        <div class="time">${cityTime.format("h:mm:ss")} <small>${cityTime.format("a")}</small >
             </div>
         `;
-    }
 }
+
 
 updateTime();
 setInterval(updateTime, 1000);

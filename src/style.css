@@ -45,7 +45,8 @@ select {
 }
 
 h2 {
-  margin: 0px auto;
+  padding-top: 0px;
+  margin: 0 0 5px
   font-size: 20px;
   font-family: "Source Sans Pro", sans-serif;
 }
@@ -76,15 +77,10 @@ h2 {
   color: #cf1516;
 }
 
-.cities {
-  padding-top: 15px;
-}
-
 .city {
   display: flex;
-  margin: 15px auto;
+  margin: 15px;
   justify-content: space-between;
-  padding: 0px 0;
   border-bottom: 0.25px dashed #cf1516;
   margin-bottom: 0px;
 }
