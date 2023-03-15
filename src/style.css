@@ -2,6 +2,8 @@ body {
   background-image: url("https://media.distractify.com/brand-img/ho1KqyB9t/1280x670/clock-creel-house-stranger-things-1654801103884.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  font-family: "Source Sans Pro", sans-serif;
+  color: #cf1516;
 }
 
 button {
@@ -71,24 +73,20 @@ h2 {
   box-shadow: 7px 7px 7px 7px #cf1516;
   border-radius: 3px;
   font-family: "Source Sans Pro", sans-serif;
-}
-
-.data {
-  padding-top: 15px;
-}
-
-.city,
-.date,
-.time {
   color: #cf1516;
+}
+
+.cities {
+  padding-top: 15px;
 }
 
 .city {
   display: flex;
-  margin: 0px auto;
+  margin: 15px auto;
   justify-content: space-between;
   padding: 0px 0;
-  border-bottom: 1px dashed #cf1516;
+  border-bottom: 0.25px dashed #cf1516;
+  margin-bottom: 0px;
 }
 
 .city:last-child {
