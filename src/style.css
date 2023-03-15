@@ -32,7 +32,7 @@ select {
   display: block;
   width: 100%;
   padding: 20px 25px;
-  margin: 15px auto;
+  margin: 20px auto;
   font-weight: bolder;
   font-size: 18px;
   color: #cf1516;
@@ -46,7 +46,7 @@ select {
 
 h2 {
   padding-top: 0px;
-  margin: 0 0 5px
+  margin: 0 0 5px;
   font-size: 20px;
   font-family: "Source Sans Pro", sans-serif;
 }
@@ -68,7 +68,7 @@ h2 {
   top: -80px;
   max-width: 600px !important;
   margin: 0px auto !important;
-  padding: 30px !important;
+  padding: 15px !important;
   border: 3px solid #cf1516;
   background: transparent;
   box-shadow: 7px 7px 7px 7px #cf1516;
@@ -79,14 +79,22 @@ h2 {
 
 .city {
   display: flex;
-  margin: 15px;
+  margin: 15px 0;
   justify-content: space-between;
   border-bottom: 0.25px dashed #cf1516;
-  margin-bottom: 0px;
+  margin-bottom: 0px !important;
 }
 
 .city:last-child {
   border: none;
+}
+
+.cities {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  margin: 15px;
 }
 
 .date {
