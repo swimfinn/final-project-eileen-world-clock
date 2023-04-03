@@ -4,7 +4,7 @@ function updateTime() {
     if (losAngelesElement) {
         let losAngelesDateElement = losAngelesElement.querySelector(".date");
         let losAngelesTimeElement = losAngelesElement.querySelector(".time");
-        let losAngelesTime = moment().tz("Europe/London");
+        let losAngelesTime = moment().tz("losAngeles/America");
 
         losAngelesDateElement.innerHTML = losAngelesTime.format("MMMM Do, YYYY");
         losAngelesTimeElement.innerHTML = losAngelesTime.format("h:mm:ss [<small>]a[</small>]");
@@ -50,7 +50,6 @@ function updateCity(event) {
             </div>
         `;
 }
-
 
 updateTime();
 setInterval(updateTime, 1000);
